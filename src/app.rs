@@ -22,6 +22,7 @@ impl eframe::App for MyApp {
 
       ui.horizontal(|ui| {
         ui.vertical(|ui| {
+          ui.set_max_width(150.0);
           ui.label("Navigation");
           ui.separator();
           if ui.button("Overview").clicked() {
